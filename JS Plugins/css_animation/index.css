@@ -1,16 +1,10 @@
 header.mainHeader{
 	width: 100%;
-	z-index: 1;
 	background: url(gambar1.jpeg);
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-size: cover;
-	padding: 0;
 	padding-bottom: 140px;
 	display: block;
 	height:800px;
-
 	background-position:static;
 
 }
@@ -29,7 +23,7 @@ h1{
 	line-height: 62px;
 	font-weight: 300;
 	color:#fff;
-	margin-bottom:15px;
+    margin-bottom:15px;
 }
 
 
@@ -42,110 +36,24 @@ h2 {
 	text-align: center;
 	margin-bottom:15px;
 	clear: both;
-	display: block;
-}
-.mainHeader h2{
-	color:#fff;
-	font-weight:300;
-	margin-bottom: 35px;
+    display: block;
 }
 
+.animated{
 
-@keyframes growIn { 
-    0% { 
-        transform: scale(0.2); 
-        opacity:0;
-    } 
-    50% { 
-        transform: scale(1.2); 
-        
-    } 
-    100% { 
-        transform: scale(1); 
-        opacity:1;
-    } 
-} 
-.growIn { 
-
-    -webkit-transform: scale(0.2);
-    transform: scale(0.2);
-    opacity:0;
-}@keyframes growIn { 
-    0% { 
-        transform: scale(0.2); 
-        opacity:0;
-    } 
-    50% { 
-        transform: scale(1.2); 
-        
-    } 
-    100% { 
-        transform: scale(1); 
-        opacity:1;
-    } 
-} 
-.growIn { 
-
-    -webkit-transform: scale(0.2);
-    transform: scale(0.2);
-    opacity:0;
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-
-.slower{
-    -webkit-animation-duration: 2s; 
-   animation-duration: 2s; 
-   -webkit-animation-fill-mode: both; 
-   animation-fill-mode: both; 
-}
-
-.bounceInRight, .bounceInLeft, .bounceInUp, .bounceInDown{
-    opacity:0;
-    -webkit-transform: translateX(400px); 
-    transform: translateX(400px); 
-}
-
-@-webkit-keyframes bounceInRight { 
-    0% { 
-        opacity: 0; 
-        
-        -webkit-transform: translateX(400px); 
-    } 
-    60% { 
-        
-        -webkit-transform: translateX(-30px); 
-    } 
-    80% { 
-        -webkit-transform: translateX(10px); 
-    } 
-    100% {
-    opacity: 1;
-     
-        -webkit-transform: translateX(0); 
-    } 
-} 
-
-@keyframes bounceInRight { 
-    0% { 
-        opacity: 0; 
-        
-        transform: translateX(400px); 
-    } 
-    60% { 
-        
-        transform: translateX(-30px); 
-    } 
-    80% { 
-        transform: translateX(10px); 
-    } 
-    100% {
-    opacity: 1;
-     
-        transform: translateX(0); 
-    } 
-} 
-
-
-.bounceInRight.go { 
-    -webkit-animation-name: bounceInRight; 
-    animation-name: bounceInRight; 
-}
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 200%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
