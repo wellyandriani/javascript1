@@ -1,0 +1,108 @@
+
+body{
+  font-family: 'Tinos', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Black Ops One', cursive;
+}
+
+.font{
+  font-family: 'Ultra', serif;
+}
+.font1
+{
+  font-family: 'Orbitron', sans-serif;
+}
+.btn button {
+  background-color: rgb(76, 172, 175); /* Green */
+  border: 1px solid rgb(0, 102, 128);
+  color: white;
+  display: block;
+}
+
+h2 {
+  position: relative;
+  left: 20em;
+  top: 20em;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: blueviolet;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+.form input{
+  border: 2px solid green;
+  padding: 5px;
+}
+
+.form input:focus{
+  background: rgb(180, 21, 21);
+  border-color: blue;
+  outline: none;
+}
+
+.col-sm {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .col-sm {
+    width:50%
+  }
+}
+
+@media (min-width: 768px) { 
+  .col-sm {
+    width: 33%;
+  }
+}
+
+@media (min-width: 992px) { 
+  .col-sm {
+    width: 25%;
+  }
+ }
+
+ .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  color: blue;
+}
+
+.navbar{
+  width: 100%;
+  height: 100px; 
+  background-color: deepskyblue;
+  display: flex;
+  flex-direction: column;
+}
+
+@media(min-width: 576px){
+  .navbar{
+    flex-direction: row;
+  }
+}
+.nav a{
+  width: 100%;
+  margin-left: 10px;
+}
